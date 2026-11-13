@@ -1,0 +1,29 @@
+# сборка
+target/
+**/target/
+*.pdb
+
+# готовые бинарники — публикуются в Releases, не в git
+/installer/
+*.exe
+
+# локальные настройки редактора и Claude
+/.claude/
+.vscode/
+.idea/
+
+# мусор
+__pycache__/
+*.log
+Thumbs.db
+.DS_Store
+
+# промо-сайт хранится только локально
+/site/
+
+# сборки под Linux / кросс-сборка Windows
+/dist/
+/target-win/
+/packaging/arch/src/
+/packaging/arch/pkg/
+/packaging/arch/*.pkg.tar.zst
